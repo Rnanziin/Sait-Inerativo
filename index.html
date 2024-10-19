@@ -3,40 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio Super Interativo</title>
+    <title>Site Super Interativo</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
 </head>
 <body>
     <header>
-        <h1>Bem-vindo ao Meu Portfólio Super Interativo!</h1>
+        <h1>👋 Bem-vindo ao Site Super Interativo!</h1>
         <nav>
             <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#jogo">Jogo 🎮</a></li>
+                <li><a href="#contato">Contato 📞</a></li>
             </ul>
         </nav>
     </header>
-    <section id="sobre" class="fade-in">
-        <h2>Sobre Mim</h2>
-        <p>Breve descrição sobre quem você é e suas habilidades.</p>
-        <img src="minha-foto.jpg" alt="Minha Foto" class="profile-pic">
+    <section id="jogo" class="fade-in">
+        <h2>Jogo: Adivinhe o Número 🎲</h2>
+        <p>Insira um número entre 1 e 100</p>
+        <input type="number" id="guess" min="1" max="100">
+        <button id="check">Verificar</button>
+        <p id="result"></p>
+        <p id="score">Pontuação: 0</p>
         <button id="colorButton">Mudar Cor do Fundo</button>
     </section>
-    <section id="projetos" class="slide-up">
-        <h2>Meus Projetos</h2>
-        <div class="projeto">
-            <h3>Projeto 1</h3>
-            <p>Descrição do projeto 1.</p>
-        </div>
-        <div class="projeto">
-            <h3>Projeto 2</h3>
-            <p>Descrição do projeto 2.</p>
-        </div>
-    </section>
     <section id="contato" class="zoom-in">
-        <h2>Contato</h2>
+        <h2>Contato 📬</h2>
         <form id="contato-form">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
@@ -49,7 +40,7 @@
         <div id="form-messages"></div>
     </section>
     <footer>
-        <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Site Super Interativo. Todos os direitos reservados. 🌍</p>
     </footer>
     <script src="script.js"></script>
 </body>
