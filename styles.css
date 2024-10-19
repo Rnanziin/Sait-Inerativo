@@ -69,11 +69,6 @@ section {
     }
 }
 
-.emoji {
-    font-size: 150px;
-    margin: 20px 0;
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -103,7 +98,7 @@ form button {
     margin-top: 10px;
 }
 
-#colorButton {
+#colorButton, #cliqueButton {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
