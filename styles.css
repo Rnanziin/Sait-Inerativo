@@ -4,6 +4,7 @@ body {
     padding: 0;
     background: linear-gradient(135deg, #f06, #ffea00);
     color: #333;
+    overflow-x: hidden;
 }
 
 header {
@@ -30,14 +31,49 @@ nav ul li {
 section {
     padding: 50px;
     text-align: center;
+    transition: all 1s ease;
 }
 
-.projeto {
-    background: rgba(255, 255, 255, 0.8);
-    margin: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.slide-up {
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideUp 2s forwards;
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.zoom-in {
+    transform: scale(0);
+    animation: zoomIn 2s forwards;
+}
+
+@keyframes zoomIn {
+    to {
+        transform: scale(1);
+    }
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
 }
 
 form {
@@ -59,6 +95,17 @@ form input, form textarea {
 }
 
 form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+#colorButton {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;

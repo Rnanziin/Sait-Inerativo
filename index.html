@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Meu Portfólio Super Interativo</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
 </head>
 <body>
     <header>
-        <h1>Bem-vindo ao Meu Portfólio!</h1>
+        <h1>Bem-vindo ao Meu Portfólio Super Interativo!</h1>
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
@@ -17,11 +18,13 @@
             </ul>
         </nav>
     </header>
-    <section id="sobre">
+    <section id="sobre" class="fade-in">
         <h2>Sobre Mim</h2>
         <p>Breve descrição sobre quem você é e suas habilidades.</p>
+        <img src="minha-foto.jpg" alt="Minha Foto" class="profile-pic">
+        <button id="colorButton">Mudar Cor do Fundo</button>
     </section>
-    <section id="projetos">
+    <section id="projetos" class="slide-up">
         <h2>Meus Projetos</h2>
         <div class="projeto">
             <h3>Projeto 1</h3>
@@ -32,9 +35,9 @@
             <p>Descrição do projeto 2.</p>
         </div>
     </section>
-    <section id="contato">
+    <section id="contato" class="zoom-in">
         <h2>Contato</h2>
-        <form>
+        <form id="contato-form">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
             <label for="email">Email:</label>
@@ -43,6 +46,7 @@
             <textarea id="mensagem" name="mensagem" required></textarea>
             <button type="submit">Enviar</button>
         </form>
+        <div id="form-messages"></div>
     </section>
     <footer>
         <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
